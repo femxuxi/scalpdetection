@@ -7,6 +7,16 @@
 <body>
     <h1>Scalp Analysis Result</h1>
     <p>Your scalp condition is: <strong>{{ condition }}</strong></p>
+    
+    <h2>Original Image</h2>
+    <img src="{{ image_url }}" width="300px">
+
+    <h2>Preprocessing Steps</h2>
+    {% for step, path in processed_paths.items() %}
+        <h3>{{ step.replace("_", " ") }}</h3>
+        <img src="{{ path }}" width="300px">
+    {% endfor %}
+
     <a href="/">Upload another image</a>
 </body>
 </html>
