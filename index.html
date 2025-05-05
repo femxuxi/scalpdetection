@@ -1,37 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scalp Detection Project</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Scalp Detection</title>
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <header>
-        <h1>Scalp Detection Project</h1>
-        <p>Welcome to the Scalp Detection Dataset and Analysis Website</p>
-    </header>
-    <main>
-        <section>
-            <h2>About the Project</h2>
-            <p>This project focuses on scalp detection using advanced image processing techniques. Explore the dataset and learn more about the methods used.</p>
-        </section>
-        <section>
-            <h2>Features</h2>
-            <ul>
-                <li>Image segmentation</li>
-                <li>Grayscale conversion</li>
-                <li>Noise reduction</li>
-                <li>Sharpening and enhancement</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Get Started</h2>
-            <p>To contribute or explore the dataset, visit the <a href="https://github.com/your-username/scalp-detection-website" target="_blank">GitHub Repository</a>.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Scalp Detection Project. All rights reserved.</p>
-    </footer>
+    <h1>Scalp Detection System</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit">Upload</button>
+    </form>
 </body>
 </html>
