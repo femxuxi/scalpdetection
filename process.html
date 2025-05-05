@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Image</title>
+</head>
+<body>
+    <h1>Process Image</h1>
+    <img src="/uploads/{{ filename }}" alt="Uploaded Image" style="max-width: 300px;">
+    <form action="/process/{{ filename }}" method="post">
+        <label for="action">Choose an action:</label>
+        <select name="action" id="action">
+            <option value="segment">Segment</option>
+            <option value="sharpen">Sharpen</option>
+            <option value="grayscale">Grayscale</option>
+            <option value="negative">Negative</option>
+            <option value="denoise">Denoise</option>
+        </select>
+        <button type="submit">Process</button>
+    </form>
+</body>
+</html>
