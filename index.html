@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Scalp Detection</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scalp Detection System</title>
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <h1>Scalp Detection System</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="image" required>
-        <button type="submit">Upload</button>
-    </form>
+    <div class="container">
+        <h1>Scalp Condition Detection</h1>
+        <p>Upload an image of your scalp to analyze its condition using advanced image processing techniques.</p>
+
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" accept=".png, .jpg, .jpeg" required>
+            <button type="submit">Analyze Image</button>
+        </form>
+
+        <h3>Supported Scalp Conditions:</h3>
+        <ul>
+            <li>✅ Dandruff</li>
+            <li>✅ Normal Scalp</li>
+            <li>✅ Folliculitis</li>
+            <li>✅ Psoriasis</li>
+            <li>✅ Dissecting Cellulitis</li>
+            <li>✅ Acne Keloidalis Nuchae</li>
+        </ul>
+
+        <h3>Preprocessing Steps Applied:</h3>
+        <ul>
+            <li>📷 Grayscaling - Focus on structural features</li>
+            <li>🔎 Segmentation - Isolate affected scalp areas</li>
+            <li>✨ Sharpening - Enhance pustules and flakes</li>
+            <li>🌓 Negative Imaging - Highlight lesions and patches</li>
+            <li>🎭 Noise Reduction - Remove stray hairs and artifacts</li>
+        </ul>
+
+        <p class="note">Ensure your image is clear and well-lit for accurate analysis.</p>
+    </div>
 </body>
 </html>
